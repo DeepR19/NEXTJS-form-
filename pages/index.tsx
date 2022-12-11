@@ -5,7 +5,6 @@ import Signup from "./Signup/Signup"
 import Login from "./Login/login"
 
 export default function Home() {
- 
   return (
     <div className={styles.container}>
         <div className={styles.main}>
@@ -18,9 +17,9 @@ export default function Home() {
            
 
           {/* Images section */}
-          <div className={styles.image}>
+          {/* <div className={styles.image}>
             <Image alt="pic" className={styles.image} width={500}  height={500} src="/iamge.png"/>
-          </div>
+          </div> */}
         </div>
     </div>
   )

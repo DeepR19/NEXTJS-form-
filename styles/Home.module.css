@@ -1,3 +1,16 @@
+.danger,
+.warning{
+  color: #ff0000;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: -5px;
+  font-size: 14px;
+}
+.warning{
+  color: #fac339;
+}
+
 .container {
   padding: 0 2rem;
   height: 100vh;
@@ -34,33 +47,35 @@
 
 .main{
   height: 80vh;
-  width: 70%;
+  width: 60%;
   background: #028ad8c5;
   z-index: 1000;
   backdrop-filter: blur(10px);
+  display: flex;
+  transition: .3s;
 }
-/* .image{
-  height: 400px;
-  width: 500px;
-  
-} */
+
+
 .form{
   /* margin-top : -19px; */
   height: 100%;
-  width: 60%;
+  width: 100%;
   background: rgba(206, 120, 120, 0.425);
+}
+.Home_login___4DHh.Home_login{
+  background: red;
 }
 
 /* Login Page */
 .form > .login{
-  height: 0%;
-  width: 0%;
+  height: 100%;
+  width: 100%;
+  /* display: none; */
+  /* visibility: hidden; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: none;
-  visibility: hidden;
 }
 .form > .login > *{
   margin: 15px 0;
@@ -181,3 +196,19 @@
   padding: 0 10px;
 }
 
+
+
+
+.image{
+  width: 40%;
+  height: 100%;
+  background-position-x: left;
+  background: url("../pages/images.png");
+  background-size: cover;
+}
+
+@media (max-width: 1000px) {
+  .main{
+    width: 100%;
+  }
+}
